@@ -1,0 +1,21 @@
+CREATE TABLE store (id integer primary key, name text, price integer, size integer, color text);
+
+insert into store values (1, "Nike", 145, 9.5, "Blue");
+insert into store values (2, "Nike", 169, 10, "Red");
+insert into store values (3, "Nike", 180, 10, "Black"); 
+insert into store values (4, "Nike", 175, 10, "White");
+insert into store values (5, "Adidas", 190, 9.5, "White");
+insert into store values (6, "Adidas", 180, 9.5, "White");
+insert into store values (7, "Nike", 250, 9.5, "Yellow");
+insert into store values (8, "UA", 150, 10, "Green");
+insert into store values (9, "UA", 175, 10, "Blue");
+insert into store values (10, "UA", 190, 10, "Purple");
+insert into store values (11, "Croc", 110, 9, "White");
+insert into store values (12, "Heydude", 85, 9.5, "Gray");
+insert into store values (13, "Heydude", 95, 10, "Orange");
+insert into store values (14, "Adidas", 115, 10.5, "Pink");
+insert into store values (15, "Nike", 185, 10, "Pink");
+
+Select * from store where price <= 175 order by price desc; 
+
+Select avg(price) name from store where name="Nike";
